@@ -1,6 +1,6 @@
-# Springo Frontend
+# untold Frontend
 
-Springo is a full-stack web application that connects users with blood donors in their vicinity. Users can easily find and contact potential donors, making it a convenient solution during emergencies.
+Untold is a full-stack web application that connects users with blood donors in their vicinity. Users can easily find and contact potential donors, making it a convenient solution during emergencies.
 
 ## Features
 
@@ -19,12 +19,6 @@ Springo is a full-stack web application that connects users with blood donors in
 - **Database:** PostgreSQL
 
 ## Installation
-
-1. Clone the repository:
-
-   ```bash
-   https://github.com/ibugithub/blood-help.git
-Set up the backend:
 
 Install Django dependencies:
 
