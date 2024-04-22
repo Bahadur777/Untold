@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # untold Frontend
+=======
+# Untold Frontend
+>>>>>>> 293ddafabca68c9481f8fe8eef9a740114aeb5b3
 
 Untold is a full-stack web application that connects users with blood donors in their vicinity. Users can easily find and contact potential donors, making it a convenient solution during emergencies.
 
@@ -15,9 +19,8 @@ Untold is a full-stack web application that connects users with blood donors in 
 ## Tech Stack
 
 - **Frontend:** Next.js
-- **Backend:** Django
-- **Database:** PostgreSQL
 
+<<<<<<< HEAD
 ## Installation
 
 Install Django dependencies:
@@ -60,3 +63,5 @@ We welcome contributions! If you find a bug or have a feature request, please op
 
 License
 This project is licensed under the MIT License.
+=======
+>>>>>>> 293ddafabca68c9481f8fe8eef9a740114aeb5b3
