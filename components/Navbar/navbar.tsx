@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import "../../styles/navbar.css";
-import logoImage from "../../assets/logo.jpg";
+import logoImage from "../../assets/logo.png";
 import Image from "next/image";
 import { useAppSelector, useAppDispatch } from "@/lib/hooks";
 import { login } from "@/lib/features/auth/authSlice";
@@ -34,9 +34,9 @@ export const Navbar = () => {
     <nav className="navbar bg-white">
       <div className="navbar-items justify-between">
         <div className="left-nav-items flex">
+        <a href="/" className="logo-text" onClick={handleNavigationClick}>
           <Image src={logoImage} alt="Logo" className="logo-image" />
-          <a href="/" className="logo-text" onClick={handleNavigationClick}>
-            Springo
+
           </a>
         </div>
         <div className=" mr-2 hidden sm:flex">

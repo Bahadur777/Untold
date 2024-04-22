@@ -77,9 +77,9 @@
 }
 
 .logo-card {
-  height: 4em;
+  
   width: 4em; /* Add width property */
-  border-radius: 50%;
+ 
 }
 
 .login-card-text {

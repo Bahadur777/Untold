@@ -4,7 +4,7 @@ import React, { useState, FormEvent } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
-import logoImage from "../../assets/logo.jpg";
+import logoImage from "../../assets/logo.png";
 import "../../styles/login-register.css";
 import Image from "next/image";
 import { BaseUrl } from "../utils/baseUrl";
