@@ -100,7 +100,7 @@ const SignUp = () => {
                   <input
                     type="text"
                     name="username"
-                    placeholder="username"
+                    placeholder="Username"
                     className="p-1 text-red-900"
                     value={username}
                     onChange={handleChange}

@@ -74,13 +74,7 @@ export const Navbar = () => {
           >
             About
           </a>
-          <a
-            href="/team"
-            className="navbar-item"
-            onClick={handleNavigationClick}
-          >
-            Team
-          </a>
+         
 
           {isAuthenticated ? (
             <>
