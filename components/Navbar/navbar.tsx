@@ -8,35 +8,38 @@ import { login } from "@/lib/features/auth/authSlice";
 
 export const Navbar = () => {
   const dispatch = useAppDispatch();
-  const isAuthenticated = useAppSelector(state => state.auth.isAuthenticated);
-  const [isLoading, setIsLoading] = useState(false)
-  const [navClick, setNavClick] = useState(false)
+  const isAuthenticated = useAppSelector((state) => state.auth.isAuthenticated);
+  const [isLoading, setIsLoading] = useState(false);
+  const [navClick, setNavClick] = useState(false);
 
   const handleNavToggle = () => {
-    setNavClick(!navClick)
-  }
+    setNavClick(!navClick);
+  };
 
   useEffect(() => {
     const token = localStorage.getItem("access_token");
     if (token) {
-      dispatch(login())
+      dispatch(login());
     }
   }, [dispatch]);
 
   const handleNavigationClick = () => {
     setIsLoading(true);
-  }
+  };
 
   if (isLoading) {
-    return <div className=" bg-white absolute top-0 left-0 right-0 h-[72px] flex justify-center"><span className="mt-[1.4rem]">Loading...</span></div>
+    return (
+      <div className=" bg-white absolute top-0 left-0 right-0 h-[72px] flex justify-center">
+        <span className="mt-[1.4rem]">Loading...</span>
+      </div>
+    );
   }
   return (
     <nav className="navbar bg-white">
       <div className="navbar-items justify-between">
         <div className="left-nav-items flex">
-        <a href="/" className="logo-text" onClick={handleNavigationClick}>
-          <Image src={logoImage} alt="Logo" className="logo-image" />
-
+          <a href="/" className="logo-text" onClick={handleNavigationClick}>
+            <Image src={logoImage} alt="Logo" className="logo-image" />
           </a>
         </div>
         <div className=" mr-2 hidden sm:flex">
@@ -71,6 +74,13 @@ export const Navbar = () => {
           >
             About
           </a>
+          <a
+            href="/team"
+            className="navbar-item"
+            onClick={handleNavigationClick}
+          >
+            Team
+          </a>
 
           {isAuthenticated ? (
             <>
@@ -94,9 +104,7 @@ export const Navbar = () => {
             </a>
           )}
         </div>
-        <div
-          className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-white  sm:hidden absolute right-2 top-[1rem]"
-        >
+        <div className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-white  sm:hidden absolute right-2 top-[1rem]">
           <span className="sr-only">t</span>
 
           {navClick ? (
@@ -173,7 +181,6 @@ export const Navbar = () => {
                 />
               </svg>
             </div>
-
           ) : (
             <svg
               onClick={handleNavToggle}
@@ -192,12 +199,8 @@ export const Navbar = () => {
               />
             </svg>
           )}
-
-
         </div>
       </div>
     </nav>
   );
-
-
 };

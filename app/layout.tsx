@@ -6,7 +6,7 @@ import { Navbar } from "@/components/Navbar/navbar";
 import StoreProvider from "./StoreProvider";
 import { Footer } from "@/components/Footer/footer";
 export const metadata: Metadata = {
-  title: "Springo",
+  title: "Untold",
   description: "Created for the Story teller",
 };
 export default function RootLayout({
